@@ -15,4 +15,7 @@ SQLObject is my version of the ActiveRecord::Base class. It has getter and sette
   ``` #save ```: calls #insert or #save, depending on whether the object exists in the table yet.
   
 ## Searchable
-SQLObject extends this module, and adds the SQLObject::where method to allow queries with (column => value) arguments.
+SQLObject extends this module, and adds the SQLObject::where method to allow queries with (:column => value) arguments.
+
+## Associations
+This contains the code I wrote to enable associations between tables, like in Active Record. I included belongs_to, has_many, and has_one_through. You may specify a foreign key, class name, and primary key if any of these are not the default guess by Rails. The SQLObject extends the module that incorporates the classes than allow this behavior.
