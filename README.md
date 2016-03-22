@@ -1,5 +1,5 @@
-# ActiveRecordLite
-Active Record Lite was a project I made that recreates some of the basic functionality of Rails' Active Record.
+# Object Relational Mapping (Ruby-SQL)
+This was a project I made that recreates some of the basic functionality of Rails' Active Record.
 
 ## SQLObject
 SQLObject is my version of the ActiveRecord::Base class. It has getter and setter methods for all columns in the model's respective table. The key methods I chose to include are ::all, ::find, #insert, #update, and #save.
